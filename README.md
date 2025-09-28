@@ -1,4 +1,4 @@
-# Delivery System -  OpenTelemetry, Helm, Kubernetes & Terraform Demo
+OpenTelemetry, Helm, Kubernetes & Terraform Demo
 
 A comprehensive demonstration of modern microservices architecture with full observability, containerization, and infrastructure-as-code deployment strategies.
 
