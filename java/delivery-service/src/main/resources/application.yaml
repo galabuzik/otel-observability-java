@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: delivery-service
+server:
+  port: 6001
+
+otel:
+  instrumentation:
+    micrometer:
+      enabled: true
+  service:
+    name: "delivery-service"
+  exporter:
+    otlp:
+      endpoint: "http://otel-collector:4318"
+      logging:
+        enabled: true
+      metrics:
+        enabled: true
+      traces:
+        enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics
