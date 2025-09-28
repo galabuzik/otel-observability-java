@@ -37,6 +37,7 @@ cd java/docker
 docker-compose up -d
 ```
 **Use Case**: Local development and testing
+
 **Access**: http://localhost:3000 (Grafana), http://localhost:6000 (Orders), http://localhost:6001 (Delivery)
 
 ### 2. Kubernetes Direct Deployment
@@ -52,6 +53,7 @@ cd kubernetes
 helm install delivery-system ./application-helm-chart/
 ```
 **Use Case**: Templated deployments with configuration management
+
 **Features**: Environment-specific values, easy upgrades
 
 ### 4. Terraform + Helm
@@ -60,6 +62,7 @@ cd terraform/environments/prod
 terraform init && terraform apply
 ```
 **Use Case**: Infrastructure as Code with state management
+
 **Features**: Multi-environment support, automated deployments, state locking
 
 ## Documentation
